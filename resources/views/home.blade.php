@@ -10,11 +10,19 @@
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
-                            {{ session('status') }}
+                          {{ session('status') }}
                         </div>
                     @endif
-
-                    Logado!
+                    Usuário
+                    {{ Auth::user()->name }}
+                    Logado!<br>
+                    <div class="panel-footer">
+                        <div class="form-group">
+                                <a href="/loja" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Comprar</a>
+                                <a href="/selecionarGrupo" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Selecionar Grupo De Consumo</a>
+                                <a href="/gruposConsumo" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Meus Grupos de Consumo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!--<title>{{ config('app.name', 'Laravel') }}</title> -->
+    <title>Grupo de Consumo Agrícola</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -57,7 +58,9 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <!--{{ config('app.name', 'Laravel') }}-->
+                        Grupo de Consumo Agrícola
+
                     </a>
                 </div>
 
@@ -86,6 +89,9 @@
                                     </li>
                                     <li>
                                         <a href="/unidadesVenda">Unidades de Venda</a>
+                                    </li>
+                                    <li>
+                                        <a href="/selecionarGrupo">Selecionar Grupo de Consumo</a>
                                     </li>
                                 </ul>
                             </li>
